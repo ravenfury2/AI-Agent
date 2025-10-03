@@ -1,6 +1,6 @@
 import os
 from config import MAX_CHARS
-from google.genai import types
+from google.genai import types # pyright: ignore[reportMissingImports]
 
 def get_file_content(working_directory, file_path):
     absolute_working_directory = os.path.abspath(working_directory)
